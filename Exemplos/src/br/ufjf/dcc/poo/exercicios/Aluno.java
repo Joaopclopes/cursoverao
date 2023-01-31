@@ -6,12 +6,11 @@ public class Aluno
 	private String nome;
 	private int    nota1,nota2,notatra;
 	
-	public float media(float n1,float n2,float n3)
+	public float media()
 	{
-		float media = ((n1+n2+n3)/3);
-		return media;
+		return ((this.nota1+this.nota2+this.notatra)/3);
 	}
-	public float Final(float n1, float n2)
+	public String Final()
 	{
 		float n3 = (6*3 - n1 - n2);
 		return n3;
