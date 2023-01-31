@@ -1,19 +1,25 @@
 package br.ufjf.dcc.poo.exemplos;
 
+import java.util.ArrayList;
+
 public class Principal 
 {
 
 	public static void main(String[] args) 
 	{
-		Pessoa pessoa1 = new Pessoa();
-		Pessoa pessoa2 = new Pessoa();
-		Pessoa pessoa3 = new Pessoa();
+		ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
 		
-		pessoa1.cpf = "001.655.564-45";
-		pessoa1.idade = 14;
+		for(int i = 0;i < 3;i++)
+		{
+			
+		}
 		
-		 
-		
+		for(Pessoa p :pessoas)
+		{
+			System.out.println("---> "+p.getNome());
+			System.out.println("---> "+p.getIdade());
+			System.out.println("---> "+p.getSexo());
+		}
 	}
 
 }
